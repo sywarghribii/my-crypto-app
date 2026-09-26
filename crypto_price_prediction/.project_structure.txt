@@ -1,0 +1,37 @@
+📁 CRYPTO PRICE PREDICTION - PROJECT STRUCTURE
+===============================================
+
+crypto_price_prediction/
+│
+├── 📄 crypto_price_prediction.ipynb    # Main Jupyter notebook
+├── 📄 README.md                        # Project overview
+├── 📄 AUTOMATION_GUIDE.md              # Automation setup guide
+│
+├── 📁 models/                          # Trained ML models (7 files)
+│   ├── bitcoin_best_model.pkl         # Bitcoin XGBoost model
+│   ├── bitcoin_scaler.pkl             # Bitcoin feature scaler
+│   ├── bitcoin_xgboost_model.pkl      # Alternative Bitcoin model
+│   ├── ethereum_best_model.pkl        # Ethereum XGBoost model
+│   ├── ethereum_scaler.pkl            # Ethereum feature scaler
+│   ├── ethereum_xgboost_model.pkl     # Alternative Ethereum model
+│   └── feature_columns.pkl            # Feature column names
+│
+├── 📁 data/                            # Historical datasets (1 file)
+│   └── combined_crypto_dataset.csv    # Training data with indicators
+│
+├── 📁 scripts/                         # Automation scripts (3 files)
+│   ├── daily_update.py                # Python automation script
+│   ├── run_daily_update.bat           # Windows batch runner
+│   └── run_with_anaconda.bat          # Anaconda-specific runner
+│
+└── 📁 output/                          # Generated predictions (1 file)
+    └── predictions_history.csv        # Daily prediction tracking
+
+QUICK ACCESS:
+=============
+- Train models: Open crypto_price_prediction.ipynb
+- Daily predictions: Run scripts/daily_update.py
+- Automate: See AUTOMATION_GUIDE.md
+- View results: Check output/predictions_history.csv
+
+TOTAL: 3 documentation files + 4 organized folders
